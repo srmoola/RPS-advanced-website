@@ -29,7 +29,7 @@ function game(playerChoice) {
     playerSelection = playerSelection.toLowerCase();
 
     if (playerSelection == computerSelection) {
-        resultText.innerText = "It's a tie!";
+        resultText.innerText = "It's a tie!"
         resultText.style.display = "block";
     }
     else if (playerSelection == "rock" && computerSelection == "scissors" || playerSelection == "scissors" && computerSelection == "paper" ||
@@ -38,7 +38,7 @@ function game(playerChoice) {
         resultText.innerText = "You won!"
         resultText.style.display = "block";
         playerText.innerText = playerName + ": " + playerScore;
-        
+
     } else {
         computerScore++;
         resultText.innerText = "You Lose!"
@@ -46,12 +46,12 @@ function game(playerChoice) {
         computerText.innerText = "Computer: " + computerScore;
     }
 
-    
-    if(playerScore >= maxScore){
+
+    if (playerScore >= maxScore) {
         gameScreen.remove();
         winText.innerText = "You Win!";
         winScreen.style.display = "block";
-    }else if(computerScore >= maxScore){
+    } else if (computerScore >= maxScore) {
         gameScreen.remove();
         winText.innerText = "You Lose!";
         winScreen.style.display = "block";
@@ -61,23 +61,23 @@ function game(playerChoice) {
 
 
 
-function chooseRock(){
+function chooseRock() {
     playerImage.src = "images/rock.png";
     game("rock");
 }
 
-function choosePaper(){
+function choosePaper() {
     playerImage.src = "images/paper.png";
     game("paper");
 }
 
-function chooseScissors(){
+function chooseScissors() {
     playerImage.src = "images/scissors.png";
     game("scissors");
 }
 
 
-function computerChoice(){
+function computerChoice() {
     const random = Math.floor((Math.random() * 3));
     return random;
 }
@@ -92,7 +92,7 @@ function getInfo() {
         nameRequired.style.display = "inline-block";
         scoreRequired.style.display = "inline-block";
         return false;
-    }else if(playerMaxScore < 1){
+    } else if (playerMaxScore < 1) {
         scoreRequired.innerText = "*has to be greater than 0"
         scoreRequired.style.display = "inline-block";
         return false;

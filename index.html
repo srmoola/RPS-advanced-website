@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +11,21 @@
     <link rel="stylesheet" href="styles.css">
     <title>Rock Paper Scissors</title>
 </head>
-<body>
-    
 
-<div id = "userInfo" class="container">
-    <div class="brand-logo-container"><img class="brand-logo" src="images/logo.png"></div>
-    <div class="brand-title">Classic RPS</div>
-    <div class="inputs">
-      <label>Name <span id = "nameRequired">*required</span></label>
-      <input id = "userName" type="text" placeholder="Enter your name" required/>
-      <label>Max Score  <span id = "scoreRequired">*required</span></label>
-      <input id = "maxScore" type="number" placeholder="Enter a number"required />
-      <button onclick="getInfo();" type="submit">PLAY</button>
+<body>
+
+
+    <div id="userInfo" class="container">
+        <div class="brand-logo-container"><img class="brand-logo" src="images/logo.png"></div>
+        <div class="brand-title">Classic RPS</div>
+        <div class="inputs">
+            <label>Name <span id="nameRequired">*required</span></label>
+            <input id="userName" type="text" placeholder="Enter your name" required />
+            <label>Max Score <span id="scoreRequired">*required</span></label>
+            <input id="maxScore" type="number" placeholder="Enter a number" required />
+            <button onclick="getInfo();" type="submit">PLAY</button>
+        </div>
     </div>
-  </div>
 
     <div id="gamescreen">
         <div onselectstart="return false" class="text">
@@ -31,29 +33,33 @@
             <p id="resultText" class="tieText">Press Something to Play!</p>
             <p id="computerText" class="computerText">Computer: 0</p>
         </div>
-    
+
         <div class="vs">
             <div id="playerBox" class="box"><img id="playerImage" class="image" src="images/question.png"></div>
             <div id="computerBox" class="box"><img id="computerImage" class="image" src="images/question.png"></div>
         </div>
-    
+
         <div class="optionscontainer">
-            <div class="options" onclick="chooseRock()"><img id="rockImage" class="image" src="images/rock.png" alt="rock"></div>
-            <div class="options" onclick="choosePaper()"><img id="paperImage" class="image" src="images/paper.png"></div>
-            <div class="options" onclick="chooseScissors()"><img id="scissorsImage" class="image" src="images/scissors.png"></div>
+            <div class="options" onclick="chooseRock()"><img id="rockImage" class="image" src="images/rock.png"
+                    alt="rock"></div>
+            <div class="options" onclick="choosePaper()"><img id="paperImage" class="image" src="images/paper.png">
+            </div>
+            <div class="options" onclick="chooseScissors()"><img id="scissorsImage" class="image"
+                    src="images/scissors.png"></div>
         </div>
     </div>
 
     <div id="winscreen" class="winscreen">
         <p id="winText"></p>
-        <div class="wincontainer">  
+        <div class="wincontainer">
             <img onclick="location.reload();" class="reloadImage" src="images/reload.png">
         </div>
         <p class="playagain">Play Again</p>
     </div>
 
-    
+
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
