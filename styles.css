@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color-scheme: dark;
+}
+input {
+    caret-color: beige;
+  }
+  
+  body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    width: 350px;
+    height: 475px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #3b3e3f;
+    color: beige;
+  }
+  
+  .brand-logo {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border-radius: 0%;
+  }
+  
+  .brand-title {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: beige;
+    letter-spacing: 1px;
+  }
+  
+  .inputs {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  label, input, button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  label {
+    margin-bottom: 4px;
+  }
+  
+  label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+  input::placeholder {
+    color: rgb(162, 161, 161);
+  }
+  
+  input {
+    background: #66696b;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+  }
+  
+  input[type=text]:focus , input[type=number]:focus{
+      border: 2px solid beige;
+    }
+  
+  button {
+    color: #3b3e3f;
+    margin-top: 20px;
+    background: beige;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+  }
+  
+  button:hover {
+      color: beige;
+      margin-top: 20px;
+      background: #66696b;
+      height: 40px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 900;
+  }
+  
+  a {
+    position: absolute;
+    font-size: 8px;
+    bottom: 4px;
+    right: 4px;
+    text-decoration: none;
+    color: black;
+    background: yellow;
+    border-radius: 10px;
+    padding: 2px;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+body{
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.optionscontainer{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 700px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: solid 4px black;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    overflow: hidden;
+    
+}
+
+.text{
+    position: absolute;
+    top: 20%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 48%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+    font-size: 24px;
+}
+
+.tieText{
+    display: block;
+}
+
+.vs{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 450px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    color: black;
+    overflow: hidden;
+    border: solid 4px black;
+}
+
+.image{
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 10;
+}
+
+.winscreen{
+    font-size: 4vw;
+    display: none;
+    width: 50%;
+    height: 50vh;
+    background-color: beige;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#3b3e3f;
+    border-radius: 999px;
+}
+
+#gamescreen{
+    display: none;
+}
+
+.wincontainer{
+    color: black;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+#winText{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reloadImage{
+    width: 100%;
+    animation: rotate 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.playagain{
+    font-size: 20px;
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#nameRequired, #scoreRequired{
+    font-size: 11px;
+    color: red;
+    display: none;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .text{
+        width: 90%;
+        
+    }
+  }
+
+
+
+
+
+
+
+
+
