@@ -2,4 +2,4 @@
 
 #Deployed on
 
-<a href="https://rpsadvanced.netlify.app/" target="_blank">Google</a>
+<a href="https://rpsadvanced.netlify.app/" target="_blank">https://rpsadvanced.netlify.app/</a>
